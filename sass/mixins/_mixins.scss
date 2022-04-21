@@ -1,0 +1,25 @@
+@use '../variables/fonts';
+
+@mixin resetStyleSheet {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin setHTML {
+    font-family: fonts.$outfitFont;
+}
+
+@mixin setBody {
+    min-height: 100vh;
+    width: 100%;
+}
+
+@mixin setContainer {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
